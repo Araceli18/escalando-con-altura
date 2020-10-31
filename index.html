@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escalando con Altura</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <link href="css/styles.css" rel="Stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="imagenes/LOGOS.png" alt="Game Warrior Logo" /></a>
+                </div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="#hero-image">Home</a></li>
+                        <li><a href="#game-types-boxes">Sinopsis</a></li>
+                        <li><a href="#recent-games">Personajes</a></li>
+                        <li><a href="#recent-reviews">Trailer</a></li>
+                        <li><a href="#posts-comments">Foro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero-image"><img class="letras" src="imagenes/inicio.jpg" />
+                <div class="hero-marketing-text">
+                    <img class="letras" src="imagenes/coollogo_com-9080666.png" />
+                    <button><a href="http://localhost:8060/tmp_js_export.html">JUGAR</a></button>
+                    <button><a href="video/zip.rar" download="JUEGO ESCALANDO CON ALTURA">DESCARGAR</a></button>
+                </div>
+            </section>
+
+            <section id="latest-news">
+                <div class="flex">
+                    <h5></h5>
+                    <div id="latest-news-container">
+                        <div class="latest-news-item">
+                            <span class="latest-news-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="game-types-boxes">
+                <div class="flex">
+
+                    <div class="box rpg">
+                        <span class="badge rpg"><h1>Sinopsis</h1></span>
+                        <div class="shade"></div>
+                        <div class="contents">
+                            <h5>Escalando con altura es un videojuego  en el que la cholita escaladora (personaje principal) iniciara su recorrido y tendrá que ir subiendo hasta la cima, para lo cual tendrá un tiempo limitado, sin embargo, deberá verse con la dificultad del clima (tormenta de nieve, que si la alcanza pierde) pero así mismo en el camino podrá conseguir el alimento que le da fuerza(la hoja de coca), el objetivo es llegar a la cima donde pondrá la bandera de Bolivia</h5>
+                        </div>
+                    </div>
+
+                    <div class="box racing">
+                        <div class="shade"></div>
+                        <div class="contents">
+                            <img class= "letras" src="imagenes/portada.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-games">
+                <h1>PERSONAJES</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="badge racing">CHOLITA ESCALADORA</span>
+                        <img src="imagenes/cholita.jpg" />
+                        <div class="box-lower-section">
+                            <h4>PERSONAJE PRINCIPAL</h4>
+                            <p>La cholita escaladora es una mujer de pollera, cuyo objetivo es llegar a la cima de la montaña </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge adventure">TORMENTA</span>
+                        <img src="imagenes/enemigo.jpg" />
+                        <div class="box-lower-section">
+                            <h4>ADVERSARIO</h4>
+                            <p>Tormenta es el adversario de la cholita escaladora evitando que ella pueda pasar por ahí</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="recent-reviews">
+                <h1>Trailer</h1>
+                <div class="video">
+                    <video src="video/JUEGO.mp4" width="100%" height="100%"autoplay muted loop controls></video>
+                </div>
+            </section>
+
+            <section id="posts-comments">
+                <div class="flex">
+                    <div >
+                        <img  src="imagenes/LOGOS.png"/>
+                        <h3>Deja tus comentarios acerca del juego!!.Dime que te parecio el juego</h3>
+                        <img class="letra" src="imagenes/bandera.png" />
+                    </div>
+
+                    <div class="comentarios">
+                        <h3>COMENTARIOS</h3>
+                        <div class="fb-comments" data-href="http://localhost/juego/index.html" data-numposts="5" data-width=""  data-colorscheme="dark"></div>
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex">
+                <small>Copyright &copy; 2020  <span class="footer-heart">&#9829;</span> Hecho por <a target="_blank">Araceli Aylin Morales Gutierrez</a>.</small>
+                <ul>
+                    <li>
+                        <a href="#hero-image">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#game-types-boxes">Sinopsis</a>
+                    </li>
+
+                    <li>
+                        <a href="#recent-games">Personajes</a>
+                    </li>
+
+                    <li>
+                        <a href="#recent-reviews">Trailer</a>
+                    </li>
+
+                    <li>
+                        <a href="#posts-comments-box">Foro</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+        <div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0" nonce="dvuXJIKA"></script>
+    </body>
+</html>
